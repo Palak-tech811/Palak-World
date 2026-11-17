@@ -74,7 +74,124 @@
             </div>
 
         </div>
+<!-- CHARACTER CREATOR SCREEN -->
 
+<section id="characterScreen" class="character-screen hidden">
+
+    <div class="creator-container">
+
+        <h1>CHARACTER SELECT</h1>
+
+        <p class="creator-subtitle">
+            Choose your adventurer!
+        </p>
+
+        <!-- CHARACTER PRESETS -->
+
+        <div class="preset-section">
+
+            <h2>CHOOSE YOUR CHARACTER</h2>
+
+            <div class="preset-list">
+
+                <button class="preset-card active"
+                    data-preset="explorer">
+                    🧑🏻‍🌾
+                    <span>EXPLORER</span>
+                </button>
+
+                <button class="preset-card"
+                    data-preset="coder">
+                    👩🏻‍💻
+                    <span>CODER</span>
+                </button>
+
+                <button class="preset-card"
+                    data-preset="artist">
+                    👩🏽‍🎨
+                    <span>ARTIST</span>
+                </button>
+
+                <button class="preset-card"
+                    data-preset="hero">
+                    🧙🏻‍♀️
+                    <span>HERO</span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- CHARACTER PREVIEW -->
+
+        <div class="character-preview">
+
+            <h2>YOUR AVATAR</h2>
+
+            <div id="avatar" class="avatar">
+                🧑🏻‍🌾
+            </div>
+
+            <p id="characterName">THE EXPLORER</p>
+
+        </div>
+
+        <!-- CUSTOMIZATION OPTIONS -->
+
+        <div class="customization">
+
+            <h2>CUSTOMIZE YOUR CHARACTER</h2>
+
+            <label for="skinTone">Skin Tone</label>
+
+            <select id="skinTone">
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="dark">Dark</option>
+            </select>
+
+            <label for="hairStyle">Hairstyle</label>
+
+            <select id="hairStyle">
+                <option value="short">Short</option>
+                <option value="long">Long</option>
+                <option value="curly">Curly</option>
+            </select>
+
+            <label for="outfit">Outfit</label>
+
+            <select id="outfit">
+                <option value="casual">Casual</option>
+                <option value="hoodie">Hoodie</option>
+                <option value="adventure">Adventure</option>
+            </select>
+
+            <label for="accessory">Accessories</label>
+
+            <select id="accessory">
+                <option value="none">None</option>
+                <option value="glasses">Glasses</option>
+                <option value="cap">Cap</option>
+                <option value="headphones">Headphones</option>
+            </select>
+
+            <label for="playerName">Player Name</label>
+
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Enter your name"
+                maxlength="15"
+            >
+
+        </div>
+
+        <button id="confirmCharacter">
+            CONFIRM CHARACTER →
+        </button>
+
+    </div>
+
+</section>
     </main>
 
     <script src="script.js"></script>
